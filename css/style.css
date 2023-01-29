@@ -34,3 +34,6 @@ background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)),
 .custom_text_shadow{
 text-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.75);
 }
+.custom_card{
+    border:none; border-radius:none;
+}
