@@ -1,5 +1,33 @@
-/* main color : #75c32c
- red : #FF552C
- blue : #00A5FF
- black : #2F4858
- gold : #F9C349 */
+/* mobile first design */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
+
+/* custom css */
+ :root{
+    --main-color: #75c32c;
+    --red-color: #FF552C;
+    --blue-color : #00A5FF;
+    --black-color : #2F4858;
+    --gold-color : #F9C349;
+ }
+ body{
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .custom_logo_img{
+    max-width: 42px;
+ }
+ .custom_logo{
+    line-height: 42px;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--black-color);
+ }
+ .custom_cart{
+    line-height: 42px;
+ }
+ .custom_bg_heading{
+    padding-top: 6rem !important;
+    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)),
+                url(../images/main_bg.jpg) no-repeat center / cover;
+ }
