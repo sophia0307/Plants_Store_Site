@@ -3,38 +3,63 @@
 
 /* custom css */
 :root{
---main-color: #75c32c;
---red-color: #FF552C;
---blue-color : #00A5FF;
---black-color : #2F4858;
---gold-color : #F9C349;
+    --main-color: #75c32c;
+    --red-color: #FF552C;
+    --blue-color : #00A5FF;
+    --black-color : #2F4858;
+    --gold-color : #F9C349;
 }
 body{
-font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-
+/* .custom_navbar{
+     0 0;
+} */
 .custom_logo_img{
-max-width: 42px;
+    max-width: 42px;
 }
 .custom_logo{
-line-height: 42px;
-margin: 0;
-font-size: 1.2rem;
-font-weight: 600;
-color: var(--black-color);
+    line-height: 42px;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--black-color);
 }
 .custom_cart{
-line-height: 42px;
+    line-height: 42px;
+    position: static;
+    margin-right:10px;
+    flex-grow: 1;
+}
+.navbar-toggler{
+    flex-grow: 1;
+}
+.navbar-brand{
+    flex-grow: 2;
 }
 .custom_main_heading{
-padding-top: 6rem !important;
-background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)),
-            url(../images/main_bg.jpg) no-repeat center / cover;
+    padding-top: 6rem !important;
+    background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.5)),
+                url(../images/main_bg.jpg) no-repeat center / cover;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 .custom_text_shadow{
-text-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.75);
+    text-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.75);
 }
 .custom_card{
     border: none !important; 
     border-radius: none !important;
+}
+.custom_list_style{
+    list-style: none !important;
+}
+
+@media screen and (min-width:992px) {
+    .custom_cart{
+        order: 3 !important;
+    }
+    .navbar-collapse{
+        order:2 !important;
+    }
 }

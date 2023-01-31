@@ -24,22 +24,21 @@
 </head>
 <body>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-sm fixed-top bg-light">
-        <div class="container-fluid">
+    <nav class="navbar fixed-top bg-light navbar-expand-lg border-bottom">
+        <div class="container-fluid align-items-center col-sm-12 col-lg-10 col-xl-8 mx-auto position-relative custom_navbar">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img class="custom_logo_img" src="./images/logo.png" alt="Green Natural Logo">
                 <h1 class="custom_logo m-0">Green Natural</h1>
             </a>
-            <div>
-                <a class="fs-3 p-1 text-center text-danger text-decoration-none custom_cart" href="#">
-                    <i class="bi bi-bag-heart-fill"></i>
-                </a>
+
+            <div class="order-3">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
+
+            <div class="collapse navbar-collapse justify-content-evenly order-4" id="navbarToggler">
+                <ul class="navbar-nav text-center mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -56,7 +55,7 @@
                         <a class="nav-link" href="#">My Account</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav mb-2 mb-lg-0 me-auto d-flex flex-row align-items-center justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-row align-items-center justify-content-center">
                     <li class="nav-item p-2">
                         <a class="nav-link fw-semibold" href="#">Login</a>
                     </li>
@@ -65,175 +64,197 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="order-2 text-center">
+                <a class="fs-3 text-danger text-decoration-none custom_cart" href="#">
+                    <i class="bi bi-bag-heart-fill"></i>
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- main -->
     <main class="mb-4">
         <!-- main heading -->
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center custom_main_heading">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <div class="position-relative p-md-5 m-md-3 p-3 text-center custom_main_heading">
+            <div class="col-sm-5 col-md-10 col-xl-8 mx-auto my-5">
                 <p class="fw-normal fs-6 text-uppercase text-light">Welcome Green Natural</p>
                 <h2 class="display-4 fw-normal text-light custom_text_shadow">Let’s Bring the Spring to Your Home</h2>
                 <a class="btn btn-light mt-3" href="#">Shop Now</a>
             </div>
         </div>
 
-        <!-- new plants list  -->
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h2 class="display-4 fw-normal text-dark">New Plants</h2>
+        <!-- contents -->
+        <div class="col-sm-12 col-lg-10 col-xl-8 mx-auto">
+            <!-- new plants list  -->
+            <div class="position-relative overflow-hidden p-3 text-center">
+                <div class="col-md-10 col-sm-5 p-lg-1 mx-auto mt-2">
+                    <h2 class="display-5 fw-normal text-dark">New Plants</h2>
+                    <a class="btn btn-success mt-3" href="#">Shop Now</a>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row row-cols-2 row-cols-md-4 g-3 justify-content-between">
+                        <div class="col">
+                            <div class="card h-100 custom_card">
+                                <img src="./images/cactus01.jpg" class="card-img-top" alt="Mini San Pedro Cactus Image"><!--product image-->
+                                <div class="card-body text-start">
+                                    <p class="card-text fs-6 text-secondary">Cactus</p><!--product category-->
+                                    <h5 class="card-title text-capitalize fs-6">Mini San Pedro Cactus</h5><!--product name-->
+                                    <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                                    </p>
+                                    <p class="card-text fs-6 text-dark fw-bold">$32.00</p><!--product price -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 custom_card">
+                                <img src="./images/plant01.jpg" class="card-img-top" alt="Money Plant Image"><!--product image-->
+                                <div class="card-body text-start">
+                                    <p class="card-text fs-6 text-secondary">Plant</p><!--product category-->
+                                    <h5 class="card-title text-capitalize fs-6">Money Plant</h5><!--product name-->
+                                    <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    </p>
+                                    <p class="card-text fs-6 text-dark fw-bold">$20.00</p><!--product price -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 custom_card">
+                                <img src="./images/cactus02.jpg" class="card-img-top" alt="Cleistocactus Cactus Image"><!--product image-->
+                                <div class="card-body text-start">
+                                    <p class="card-text fs-6 text-secondary">Cactus</p><!--product category-->
+                                    <h5 class="card-title text-capitalize fs-6">Cleisto Cactus</h5><!--product name-->
+                                    <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                                    </p>
+                                    <p class="card-text fs-6 text-dark fw-bold">$25.00</p><!--product price -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 custom_card">
+                                <img src="./images/plant02.jpg" class="card-img-top" alt="Aluminum Plant Image"><!--product image-->
+                                <div class="card-body text-start">
+                                    <p class="card-text fs-6 text-secondary">Plant</p><!--product category-->
+                                    <h5 class="card-title text-capitalize fs-6">Aluminum Plant</h5><!--product name-->
+                                    <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    </p>
+                                    <p class="card-text fs-6 text-dark fw-bold">$45.00</p><!--product price -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- about -->
+            <div class="row mx-0 my-4 p-3 mx-auto align-items-center">
+                <div class="col-sm-12 col-lg-6 mb-2">
+                    <img src="./images/about_bg.jpg" class="img-fluid" alt="Our Story">
+                </div>
+
+                <div class="col-sm-12 col-lg-6 container-fluid px-3">
+                    <p class="mb-1">OUR STORY</p>
+                    <h2 class="mb-1">For People Who Love Plants</h2>
+                    <p class="fw-normal my-3 text-break">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quisquam, neque laborum eligendi cupiditate voluptatem nobis. Molestias pariatur expedita facere error. Doloribus voluptatum adipisci a earum et quidem beatae necessitatibus.</p>
+                    <a class="btn btn-success mt-3" href="#">Read More</a>
+                </div>
+            </div>
+
+            <!-- featured plants -->
+            <div class="position-relative overflow-hidden p-3 text-center">
+                <div class="col-md-10 col-sm-5 p-lg-1 mx-auto my-2">
+                    <h2 class="display-5 fw-normal text-dark">Featured Plants</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row row-cols-2 row-cols-md-4 g-3 justify-content-between">
+                        <div class="col">
+                            <div class="card h-100 custom_card">
+                                <img src="./images/cactus01.jpg" class="card-img-top" alt="Mini San Pedro Cactus Image"><!--product image-->
+                                <div class="card-body text-start">
+                                    <p class="card-text fs-6 text-secondary">Cactus</p><!--product category-->
+                                    <h5 class="card-title text-capitalize fs-6">Mini San Pedro Cactus</h5><!--product name-->
+                                    <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                                    </p>
+                                    <p class="card-text fs-6 text-dark fw-bold">$32.00</p><!--product price -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 custom_card">
+                                <img src="./images/plant01.jpg" class="card-img-top" alt="Money Plant Image"><!--product image-->
+                                <div class="card-body text-start">
+                                    <p class="card-text fs-6 text-secondary">Plant</p><!--product category-->
+                                    <h5 class="card-title text-capitalize fs-6">Money Plant</h5><!--product name-->
+                                    <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    </p>
+                                    <p class="card-text fs-6 text-dark fw-bold">$20.00</p><!--product price -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 custom_card">
+                                <img src="./images/cactus02.jpg" class="card-img-top" alt="Cleistocactus Cactus Image"><!--product image-->
+                                <div class="card-body text-start">
+                                    <p class="card-text fs-6 text-secondary">Cactus</p><!--product category-->
+                                    <h5 class="card-title text-capitalize fs-6">Cleisto Cactus</h5><!--product name-->
+                                    <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                                    </p>
+                                    <p class="card-text fs-6 text-dark fw-bold">$25.00</p><!--product price -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 custom_card">
+                                <img src="./images/plant02.jpg" class="card-img-top" alt="Aluminum Plant Image"><!--product image-->
+                                <div class="card-body text-start">
+                                    <p class="card-text fs-6 text-secondary">Plant</p><!--product category-->
+                                    <h5 class="card-title text-capitalize fs-6">Aluminum Plant</h5><!--product name-->
+                                    <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    </p>
+                                    <p class="card-text fs-6 text-dark fw-bold">$45.00</p><!--product price -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <a class="btn btn-success mt-3" href="#">Shop Now</a>
             </div>
-
-            <div class="row row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card h-100 custom_card">
-                        <img src="./images/cactus01.jpg" class="card-img-top" alt="Mini San Pedro Cactus Image"><!--product image-->
-                        <div class="card-body text-start">
-                            <p class="card-text fs-6 text-secondary">Cactus</p><!--product category-->
-                            <h5 class="card-title text-capitalize fs-6">Mini San Pedro Cactus</h5><!--product name-->
-                            <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
-                            </p>
-                            <p class="card-text fs-6 text-dark fw-bold">$32.00</p><!--product price -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 custom_card">
-                        <img src="./images/plant01.jpg" class="card-img-top" alt="Money Plant Image"><!--product image-->
-                        <div class="card-body text-start">
-                            <p class="card-text fs-6 text-secondary">Plant</p><!--product category-->
-                            <h5 class="card-title text-capitalize fs-6">Money Plant</h5><!--product name-->
-                            <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                            </p>
-                            <p class="card-text fs-6 text-dark fw-bold">$20.00</p><!--product price -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 custom_card">
-                        <img src="./images/cactus02.jpg" class="card-img-top" alt="Cleistocactus Cactus Image"><!--product image-->
-                        <div class="card-body text-start">
-                            <p class="card-text fs-6 text-secondary">Cactus</p><!--product category-->
-                            <h5 class="card-title text-capitalize fs-6">Cleisto Cactus</h5><!--product name-->
-                            <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
-                            </p>
-                            <p class="card-text fs-6 text-dark fw-bold">$25.00</p><!--product price -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 custom_card">
-                        <img src="./images/plant02.jpg" class="card-img-top" alt="Aluminum Plant Image"><!--product image-->
-                        <div class="card-body text-start">
-                            <p class="card-text fs-6 text-secondary">Plant</p><!--product category-->
-                            <h5 class="card-title text-capitalize fs-6">Aluminum Plant</h5><!--product name-->
-                            <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                            </p>
-                            <p class="card-text fs-6 text-dark fw-bold">$45.00</p><!--product price -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-        <!-- about -->
-        <div class="my-4">
-            <img src="./images/bg04.jpg" class="img-fluid" alt="Our Story">
-            <div class="col-md-12 py-2 px-3">
-                <p class="mb-1">OUR STORY</p>
-                <h2 class="mb-1">For People Who Love Plants</h2>
-                <p class="lead fw-normal my-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quisquam, neque laborum eligendi cupiditate voluptatem nobis. Molestias pariatur expedita facere error. Doloribus voluptatum adipisci a earum et quidem beatae necessitatibus.</p>
-                <a class="btn btn-success mt-3" href="#">Read More</a>
-            </div>
-        </div>
-
-        <!-- featured plants -->
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h2 class="display-4 fw-normal text-dark">Featured Plants</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="row row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card h-100 custom_card">
-                        <img src="./images/cactus01.jpg" class="card-img-top" alt="Mini San Pedro Cactus Image"><!--product image-->
-                        <div class="card-body text-start">
-                            <p class="card-text fs-6 text-secondary">Cactus</p><!--product category-->
-                            <h5 class="card-title text-capitalize fs-6">Mini San Pedro Cactus</h5><!--product name-->
-                            <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
-                            </p>
-                            <p class="card-text fs-6 text-dark fw-bold">$32.00</p><!--product price -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 custom_card">
-                        <img src="./images/plant01.jpg" class="card-img-top" alt="Money Plant Image"><!--product image-->
-                        <div class="card-body text-start">
-                            <p class="card-text fs-6 text-secondary">Plant</p><!--product category-->
-                            <h5 class="card-title text-capitalize fs-6">Money Plant</h5><!--product name-->
-                            <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                            </p>
-                            <p class="card-text fs-6 text-dark fw-bold">$20.00</p><!--product price -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 custom_card">
-                        <img src="./images/cactus02.jpg" class="card-img-top" alt="Cleistocactus Cactus Image"><!--product image-->
-                        <div class="card-body text-start">
-                            <p class="card-text fs-6 text-secondary">Cactus</p><!--product category-->
-                            <h5 class="card-title text-capitalize fs-6">Cleisto Cactus</h5><!--product name-->
-                            <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
-                            </p>
-                            <p class="card-text fs-6 text-dark fw-bold">$25.00</p><!--product price -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 custom_card">
-                        <img src="./images/plant02.jpg" class="card-img-top" alt="Aluminum Plant Image"><!--product image-->
-                        <div class="card-body text-start">
-                            <p class="card-text fs-6 text-secondary">Plant</p><!--product category-->
-                            <h5 class="card-title text-capitalize fs-6">Aluminum Plant</h5><!--product name-->
-                            <p class="card-text custom_star_rating fs-6 text-secondary"><!--product star rating -->
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
-                            </p>
-                            <p class="card-text fs-6 text-dark fw-bold">$45.00</p><!--product price -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="btn btn-success mt-3" href="#">Shop Now</a>
         </div>
     </main>
 
     <!-- footer -->
     <footer class="pt-4 border-top">
-        <div class="custom_footer">
-            <div class="col-sm-12 mb-2 py-2 px-3"><!--col-md-2 mb-2 py-2 px-4-->
+        <div class="text-center row m-0 align-items-center justify-content-center col-lg-10 col-xl-8 mx-auto">
+            <div class="col-sm-12 col-md-6 mb-2 align-self-start">
                 <h2 class="fw-bold fs-3 text-secondary">
-                    <img src="./images/logo.png" class="w-25" alt="Green Natural Logo">
+                    <img src="./images/logo.png" class="w-25" alt="Green Natural Logo" style="max-width:100px;">
                     Green Natural
                 </h2>
+                <ul class="list-inline d-flex align-items-center justify-content-center">
+                    <li><a href="#" class="p-2 text-secondary fs-3"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="p-2 text-secondary fs-3"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#" class="p-2 text-secondary fs-3"><i class="bi bi-twitter"></i></a></li>
+                </ul>
             </div>
-            <div class="col-sm-12 mb-2 py-2 px-3">
+            <div class="col-sm-12 col-md-6 mb-2 align-self-end">
                 <h2 class="fs-3 text-secondary fw-normal">Important Links</h2>
-                <ul class="icon-list p-0">
-                    <li class="d-flex align-items-start mb-1"><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></li>
-                    <li class="d-flex align-items-start mb-1"><a href="#" class="text-decoration-none text-secondary">Shipping Details</a></li>
-                    <li class="d-flex align-items-start mb-1"><a href="#" class="text-decoration-none text-secondary">Terms & Conditions</a></li>
-                    <li class="d-flex align-items-start mb-1"><a href="#" class="text-decoration-none text-secondary">Media Kit</a></li>
+                <ul class="icon-list p-0 custom_list_style">
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-secondary">Shipping Details</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-secondary">Terms & Conditions</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-secondary">Media Kit</a></li>
                 </ul>
             </div>
         </div>
